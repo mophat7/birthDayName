@@ -7,13 +7,22 @@
   <title>Birthday System</title>
 </head>
 <body>
+  <div id="error"></div>
   <form action="" id="form">
     <label for="day">Date:</label>
-    <input type="text" id="day" placeholder="Enter the Date of Birth">
+    <input type="text" id="day" placeholder="Enter the Date of Birth" maxlength="2" minlength="2">
     <label for="month">Month:</label>
-    <input type="text" id="month" placeholder="Enter the Month of Birth">
-    <label for="year">Year:</label>
-    <input type="text" id="year" placeholder="Enter the year of Birth">
+    <input type="text" id="month" placeholder="Enter the Month of Birth" maxlength="2" minlength="2">
+    <label for="year">Centuary(CC) 1989 will be 19:</label>
+    <input type="text" id="centuary" placeholder="Enter Centuary" maxlength="2" minlength="2">
+    <label for="year">Year(YY):</label>
+    <input type="text" id="year" placeholder="Enter the year of Birth" maxlength="2" minlength="2">
+    <label for="gender">Gender</label>
+    <select name="" id="select">
+      <option value="">~Select Gender ~</option>
+      <option value="Male">Male</option>
+      <option value="Male">Female</option>
+    </select>
     <input type="submit" value="Submit">
   </form>
   
