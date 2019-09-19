@@ -51,46 +51,102 @@ form.addEventListener('submit', (e)=> {
         var newDay= Math.round(Day);
         if(newDay==1){
             e.preventDefault()
+            var exactDay="Monday";
             
-            error.innerText="Monday";
         }
         if(newDay==2){
             e.preventDefault()
-            error.innerText="Tuesday";
+            var exactDay="Tuesday";
         }
 
         if(newDay==3){
             e.preventDefault()
-            error.innerText="Wednesday";
+            var exactDay="Wednesday";
         }
 
         if(newDay==4){
             e.preventDefault()
-            error.innerText="Thursday";
+            var exactDay="Thursday";
         }
 
         if(newDay==5){
             e.preventDefault()
-            error.innerText="Friday";
+            var exactDay="Friday";
         }
 
         if(newDay==6){
             e.preventDefault()
-            error.innerText="Saturday";
+            var exactDay="Saturday";
         }
         if(newDay==0){
             e.preventDefault()
-            error.innerText="Sunday";
+            var exactDay="Sunday";
         }
         
+        if(exactDay=="Monday" && gender=="Male"){
+            error.innerText="Kwadwo";
+        } else if(exactDay=="Monday" && gender=="Female"){
+            error.innerText="Adwoa";
+        } 
+        else if(exactDay=="Tuesday" && gender=="Male"){
+            error.innerText="Kwabena";
+        } else if(exactDay=="Tuesday" && gender=="Female"){
+            error.innerText="Abenaa";
 
+        } else if(exactDay=="Wednesday" && gender=="Male"){
+            error.innerText="Kwaku";
+        } else if(exactDay=="Wednesay" && gender=="Female"){
+            error.innerText="Akua";
 
+        } else if(exactDay=="Thursday" && gender=="Male"){
+            error.innerText="Yaw";
+        } else if(exactDay=="Thursday" && gender=="Female"){
+            error.innerText="Yaa";
+            
+        } else if(exactDay=="Friday" && gender=="Male"){
+            error.innerText="Kofi";            
+        } else if(exactDay=="Friday" && gender=="Female"){
+            error.innerText="Afua";
+
+        } else if(exactDay=="Saturday" && gender=="Male"){
+            error.innerText="Kwame";
+        } else if(exactDay=="Saturday" && gender=="Female"){
+            error.innerText="Ama";
+
+        } else if(exactDay=="Sunday" && gender=="Male"){
+            error.innerText="Kwasi";
+        } else if(exactDay=="Sunday" && gender=="Female"){
+            error.innerText="Akosua";
+        } 
         
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
-    
 
 
 });
