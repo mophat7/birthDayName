@@ -84,39 +84,39 @@ form.addEventListener('submit', (e)=> {
         }
         
         if(exactDay=="Monday" && gender=="Male"){
-            error.innerText="Kwadwo";
+            error.innerText="Your Ghanian Name is Kwadwo";
         } else if(exactDay=="Monday" && gender=="Female"){
-            error.innerText="Adwoa";
+            error.innerText="Your Ghanian Name is Adwoa";
         } 
         else if(exactDay=="Tuesday" && gender=="Male"){
-            error.innerText="Kwabena";
+            error.innerText="Your Ghanian Name is Kwabena";
         } else if(exactDay=="Tuesday" && gender=="Female"){
-            error.innerText="Abenaa";
+            error.innerText="Your Ghanian Name is Abenaa";
 
         } else if(exactDay=="Wednesday" && gender=="Male"){
-            error.innerText="Kwaku";
+            error.innerText="Your Ghanian Name is Kwaku";
         } else if(exactDay=="Wednesay" && gender=="Female"){
             error.innerText="Akua";
 
         } else if(exactDay=="Thursday" && gender=="Male"){
-            error.innerText="Yaw";
+            error.innerText="Your Ghanian Name is Yaw";
         } else if(exactDay=="Thursday" && gender=="Female"){
-            error.innerText="Yaa";
+            error.innerText="Your Ghanian Name is Yaa";
             
         } else if(exactDay=="Friday" && gender=="Male"){
-            error.innerText="Kofi";            
+            error.innerText="Your Ghanian Name is Kofi";            
         } else if(exactDay=="Friday" && gender=="Female"){
-            error.innerText="Afua";
+            error.innerText="Your Ghanian Name is Afua";
 
         } else if(exactDay=="Saturday" && gender=="Male"){
-            error.innerText="Kwame";
+            error.innerText="Your Ghanian Name is Kwame";
         } else if(exactDay=="Saturday" && gender=="Female"){
-            error.innerText="Ama";
+            error.innerText="Your Ghanian Name is Ama";
 
         } else if(exactDay=="Sunday" && gender=="Male"){
-            error.innerText="Kwasi";
+            error.innerText="Your Ghanian Name is Kwasi";
         } else if(exactDay=="Sunday" && gender=="Female"){
-            error.innerText="Akosua";
+            error.innerText="Your Ghanian Name is Akosua";
         } 
         
 
