@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Birthday System</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <!-- The Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Birthday Name System</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -18,77 +19,102 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#birthday">Check Name</a>
+                <a class="nav-link" href="#register">Check Name</a>
               </li>
           </ul>
-          <span class="navbar-text">
-            Know Your Ghanian Name Now!!!
-          </span>
+          
         </div>
       </nav>
-      <section id="main">
+      <section id="main" class="padding">
         <div class="landing-text">                   
             <h1>Birth Day Name System</h1>
             <h3>This system is able to tell you your Ghanian Name by just entering the exact Date of Birth</h3>                         
-            <a href="#" class="btn btn-primary btn-lg ">Explore</a>
+            <a href="#register" class="btn btn-primary btn-lg ">Check Your Name</a>
                          
         </div>
       </section>
+      <section id="fixed">
+
+      </section>
+      <section>
+        <div class="container" id="register">
+          <div class="row">
+            <div class="col-sm-6 col-lg-6">
+                <div id="error" class="errors" ></div>
+                <form action="" id="form" style="width:500px; margin:auto;">
+                  <div class="form-group">
+                  <label for="day"  >Date:</label>
+                  <input type="text" id="day" placeholder="Enter the Date of Birth" class="form-control" maxlength="2" minlength="2">
+                  </div>
+              
+                  <div class="form-group">
+                  <label for="month" >Month:</label>
+                  <input type="text" id="month" class="form-control" placeholder="Enter the Month of Birth" maxlength="2" minlength="2">
+                  </div>
+              
+                  <div class="form-group">
+                  <label for="year" >Centuary(CC) 1989 will be 19:</label>
+                  <input type="text" class="form-control" id="centuary" placeholder="Enter Centuary" maxlength="2" minlength="2">
+                  </div>
+              
+                  <div class="form-group">
+                  <label for="year" >Year(YY):</label>
+                  <input type="text" class="form-control" id="year" placeholder="Enter the year of Birth" maxlength="2" minlength="2">
+                  </div>
+              
+                  <div class="form-group">
+                  <label for="gender" >Gender</label>
+                  <select name="" id="select" class="form-control">
+                    <option class="form-control" value="">~Select Gender ~</option>
+                    <option class="form-control" value="Male">Male</option>
+                    <option class="form-control" value="Female">Female</option>
+                  </select>
+                </div>
+              
+                  <div class="form-group">
+                  <input class="form-control" type="submit" value="Submit">
+                  <p class="text-success" >This is the system that enables you to Know your Ghanian Name. Symply Fill the form and click submit</p>
+                  </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12 col-md-12 ">
+              <h3>Wow I wanna Know my Ghanian Name</h3>
+              <img src="./images/3.jpeg" alt="" class="img-fluid" width="500px" height="auto">
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="row">
+          <div class="col-sm-6" col-xs-12>
+            <h2>Contact Us</h2>
+            <h3>Our contact and Information here</h3>
+
+          </div>
+          <div class="col-sm-6">
+            <h2>Connect</h2>
+            <a href="https://facebook.com/mophatc" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/watch?v=eT-B85gZ8bE" class="fa fa-youtube"></a>
+            <a href="https://facebook.com/ChemiatiMophat" class="fa fa-twitter"></a>
+            <a href="https://facebook.com/watalcomcentre" class="fa fa-linkedin"></a>
+            <a href="mailto:watalcomcentre@gmail.com" class="fa fa-envelope"></a>
+            
+            </div>
+                          
+        </div>
+      </footer>
+    
 
       
 
-    <section id="birthday">
-  <div class="container">
-  <div id="error" class="errors" ></div>
-  <form action="" id="form" style="width:500px; margin:auto;">
-    <div class="form-group">
-    <label for="day"  >Date:</label>
-    <input type="text" id="day" placeholder="Enter the Date of Birth" class="form-control" maxlength="2" minlength="2">
-    </div>
-
-    <div class="form-group">
-    <label for="month" >Month:</label>
-    <input type="text" id="month" class="form-control" placeholder="Enter the Month of Birth" maxlength="2" minlength="2">
-    </div>
-
-    <div class="form-group">
-    <label for="year" >Centuary(CC) 1989 will be 19:</label>
-    <input type="text" class="form-control" id="centuary" placeholder="Enter Centuary" maxlength="2" minlength="2">
-    </div>
-
-    <div class="form-group">
-    <label for="year" >Year(YY):</label>
-    <input type="text" class="form-control" id="year" placeholder="Enter the year of Birth" maxlength="2" minlength="2">
-    </div>
-
-    <div class="form-group">
-    <label for="gender" >Gender</label>
-    <select name="" id="select" class="form-control">
-      <option class="form-control" value="">~Select Gender ~</option>
-      <option class="form-control" value="Male">Male</option>
-      <option class="form-control" value="Female">Female</option>
-    </select>
-  </div>
-
-    <div class="form-group">
-    <input class="form-control" type="submit" value="Submit">
-    <p class="text-success" >This is the system that enables you to Know your Ghanian Name. Symply Fill the form and click submit</p>
-    </div>
-  </form>
-
-  
-
-</div>
-</section>
+    
   
 
   <script src="ui.js"></script>
