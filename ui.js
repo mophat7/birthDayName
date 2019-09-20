@@ -7,7 +7,7 @@ let form=document.getElementById('form');
 let error=document.getElementById('error');
 let gender=document.getElementById('select');
 
-
+//Create a function
 
 
 //prevent the submit button from submitting form 
