@@ -8,6 +8,11 @@ let error=document.getElementById('error');
 let gender=document.getElementById('select');
 
 //Create a function
+function lettersOnly(input){
+    var lts =/[^a-z]/gi;
+    input.value=input.value.replace(lts, "");
+
+}
 
 
 //prevent the submit button from submitting form 
