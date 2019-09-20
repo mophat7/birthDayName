@@ -14,7 +14,9 @@ function lettersOnly(input){
 
 }
 function numbersOnly(input){
-    
+    var its1=/[^1-0]/gi;
+    input.value=input.value.replace(its1, "");
+
 }
 
 
