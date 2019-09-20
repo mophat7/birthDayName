@@ -10,8 +10,11 @@ let gender=document.getElementById('select');
 //Create a function
 function lettersOnly(input){
     var lts =/[^a-z]/gi;
-    input.value=input.value.replace(lts, "");
+    input.value=input.value.replace(lts, alert(""));
 
+}
+function numbersOnly(input){
+    
 }
 
 
