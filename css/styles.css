@@ -58,14 +58,14 @@ footer{
     color:#d5d4d5;
 }
 .errors{
-    width: 500px;
+    /* width: 500px; */
     margin: auto;
-    background-color:red;
-    color:white;
+    /* background-color:red; */
+    color:red;;
     font-size: 15px;
     border-radius: 10px;
     text-align: center;
-    height: 70px;
+    /* height: 70px; */
     padding: 10px;
     font-weight: 700;
 }
