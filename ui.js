@@ -16,6 +16,7 @@ function lettersOnly(input){
 function numbersOnly(input){
     var its1=/[^0-9]/g;
     input.value=input.value.replace(its1, "");
+    
 
 }
 
