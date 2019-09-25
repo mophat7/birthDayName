@@ -44,29 +44,29 @@
 
       </section>
       <section>
-        <div class="container" id="register">
+        <div class="container-fluid" id="register">
           <div class="row">
             <div class="col-sm-6 col-lg-6">
                 <div id="error" class="errors" ></div>
-                <form action="" id="form" style="width:500px; margin:auto;">
+                <form action="" id="form">
                   <div class="form-group">
                   <label for="day"  >Date:</label>
-                  <input type="text" id="day" placeholder="Enter the Date of Birth" class="form-control" maxlength="2" minlength="2">
+                  <input type="text" id="day" placeholder="Enter the Date of Birth" class="form-control" onkeyup="numbersOnly(this);" maxlength="2" minlength="2">
                   </div>
               
                   <div class="form-group">
                   <label for="month" >Month:</label>
-                  <input type="text" id="month" class="form-control" placeholder="Enter the Month of Birth" maxlength="2" minlength="2">
+                  <input type="text" id="month" class="form-control" placeholder="Enter the Month of Birth" onkeyup="numbersOnly(this);" maxlength="2" minlength="2">
                   </div>
               
                   <div class="form-group">
                   <label for="year" >Centuary(CC) 1989 will be 19:</label>
-                  <input type="text" class="form-control" id="centuary" placeholder="Enter Centuary" maxlength="2" minlength="2">
+                  <input type="text" class="form-control" id="centuary" placeholder="Enter Centuary" onkeyup="numbersOnly(this);" maxlength="2" minlength="2">
                   </div>
               
                   <div class="form-group">
                   <label for="year" >Year(YY):</label>
-                  <input type="text" class="form-control" id="year" placeholder="Enter the year of Birth" maxlength="2" minlength="2">
+                  <input type="text" class="form-control" id="year" placeholder="Enter the year of Birth" onkeyup="numbersOnly(this);" maxlength="2" minlength="2">
                   </div>
               
                   <div class="form-group">
@@ -78,15 +78,17 @@
                   </select>
                 </div>
               
-                  <div class="form-group">
+                  <div class="form-group" id="system">
                   <input class="form-control" type="submit" value="Submit">
                   <p class="text-success" >This is the system that enables you to Know your Ghanian Name. Symply Fill the form and click submit</p>
                   </div>
                 </form>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12 col-md-12 ">
+            <div class="col-lg-6 col-sm-6 col-xs-12 col-md-12 " id="image">
+              
               <h3>Wow I wanna Know my Ghanian Name</h3>
-              <img src="./images/3.jpeg" alt="" class="img-fluid" width="500px" height="auto">
+              <img src="./images/3.jpeg"  alt="" class="img-fluid" >
+            
             </div>
           </div>
         </div>
